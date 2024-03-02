@@ -23,7 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var canvas = document.getElementById('my-canvas');
     var ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth + margin_overflow_one_side*2;
-    canvas.height = window.innerHeight * canvas_height_factor;
+    if (window.innerWidth > 750){
+        canvas.height = window.innerHeight * canvas_height_factor;
+    }
+    else {
+        canvas.height = window.innerHeight;
+    }
+    
     canvas.style.left = -margin_overflow_one_side + "px";
   
     var balls = []; // Array to hold multiple balls
@@ -126,5 +132,11 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('resize', function() {
     var canvas = document.getElementById('my-canvas');
     canvas.width = window.innerWidth + margin_overflow_one_side*2;
-    canvas.height = window.innerHeight * canvas_height_factor;
+    if (window.innerWidth > 750){
+        canvas.height = window.innerHeight * canvas_height_factor;
+    }
+    else
+    {
+        canvas.height = window.innerHeight;
+    }
   });
