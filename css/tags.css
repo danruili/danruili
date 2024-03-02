@@ -1,0 +1,83 @@
+.banner-content .research-statement .tags{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #343434;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+.banner-content .research-statement .tags:hover{
+    background-color: #bebebe;
+}
+
+.profile-card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+.profile-card .tags a {
+    font-family: "Georama", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: medium;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+    color: #cfcfcf;
+}
+.profile-card .tags a:visited {
+    color: #cfcfcf;
+}
+.profile-card .tags a:hover {
+    background-color: #bebebe;
+}
+.profile-card .tags .linkedin:hover {
+    background-color: #2c4791;
+    color: white;
+}
+.profile-card .tags .researchgate:hover {
+    background-color: #2bc290;
+    color: white;
+}
+
+.card .text-content .tags span {
+    font-family: "Georama", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: small;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #dbdbdb;
+    transition: background-color 0.2s ease;
+}
+.card .text-content .tags span:hover {
+    background-color: #bebebe;
+}
+.card .text-content .tags .publication {
+    color: grey;
+    background-color: #ffffff;
+    border-color: #a0a0a0;
+    border-width: 1px;
+    border-style: solid;
+}
+.card .text-content .tags .publication:hover {
+    background-color: #f0f0f0;
+}
+
+/* any element with the class .ai-tag will have the following styles */
+* .ai-tag:hover {
+    background-color: #38a18f !important;
+    color: white;
+}
+* .arch-tag:hover {
+    background-color: #ac6849 !important;
+    color: white;
+}
+* .human-tag:hover {
+    background-color: #ae4c4c !important;
+    color: white;
+}
