@@ -1,58 +1,42 @@
 /*activity card*/
-.year-record {
-    display: flex;
-    gap: 30px;
+.list-section {
     margin-top: 20px;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     margin-bottom: 60px;
-}
 
-.year-record .time-content {
-    flex: 1;
     display: flex;
 }
-.year-record .time-content div{
-    font-family: "Georama", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 45px;
-    color: #dfdfdf;
-    margin-top: 20px;
-}
 
-.year-record .activity-list {
-    display: flex;
-    flex-direction: column;
+.card-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
-    flex: 7;
 }
 
-
-.activity-list .card {
-    width: 100%;
+.card {
     /* max-height: 350px; */
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    /* border-width: 1px;
-    border-style: solid;
-    border-color: #e0e0e0; */
+    flex-direction: column;
     transition: box-shadow 0.2s ease;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.0);
     background-color: #fff;
 }
-.activity-list .card:hover {
+.card:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .card .text-content {
-    flex: 2;
-    padding: 30px 30px 25px 30px;
+    padding: 30px 30px 30px 30px;
     display: flex;
     flex-direction: column;
+    margin-bottom: auto;
 }
 .card .text-content h2 {
     font-family: "Georama", sans-serif;
@@ -72,27 +56,28 @@
     font-style: normal;
     font-weight: 400;
     width: 100%;
+
 }
 .card .text-content .tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: auto;
-
+    /* margin-top: auto; */
 }
 
 
 .card .image-content {
-    flex: 1;
     display: flex;
     justify-content: center;
     overflow: clip;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 0 10px 10px;
+    margin-top: auto;
 }
 .card .image-content img{
-    /* crop to fit the frame*/
     object-fit: cover;
     width: 100%;
+    max-height: 250px;
+    height: auto;
 }
 .card .image-content .image-description {
     display: none;
@@ -100,18 +85,13 @@
 
 /* when viewed from a tablet */
 @media (max-width: 1000px) {
-    .year-record {
-        flex-direction: column; 
+    .card-list{
+        grid-template-columns: 1fr;
     }
 }
 
 
 /* when viewed from a mobile */
 @media (max-width: 750px) {
-    .activity-list .card {
-        flex-direction: column; 
-    }
-    .card .image-content {
-        border-radius: 0 0 10px 10px;
-    }
+
 }
