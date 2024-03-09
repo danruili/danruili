@@ -1,6 +1,6 @@
 /*activity card*/
 .list-section {
-    margin-top: 20px;
+    margin-top: 50px;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -38,11 +38,15 @@
     flex-direction: column;
     margin-bottom: auto;
 }
+
+/* title */
 .card .text-content h2 {
     font-family: "Georama", sans-serif;
     font-style: normal;
     font-weight: 500;
+    font-size: larger;
     margin-top: 0;
+    margin-bottom: 7px;
 }
 .card .text-content .h2-link {
     text-decoration: none;
@@ -51,12 +55,27 @@
 .card .text-content .h2-link:visited {
     color: black;
 }
+
+/* authors */
+.card .text-content .authors{
+    font-family: "Georama", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: medium;
+    color: grey;
+    margin-bottom: 8px;
+}
+.card .text-content .authors .me{
+    font-weight: 400;
+    color: #333;
+}
+
 .card .text-content .content {
     font-family: "Georama", sans-serif;
     font-style: normal;
     font-weight: 400;
     width: 100%;
-
+    color: #333;
 }
 .card .text-content .tags {
     display: flex;
@@ -64,6 +83,7 @@
     gap: 10px;
     /* margin-top: auto; */
 }
+
 
 
 .card .image-content {

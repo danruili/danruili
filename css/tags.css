@@ -52,17 +52,6 @@
 
 .profile-card .univ-link{
     text-decoration: none;
-    /* color: rgb(75, 75, 75); */
-}
-.profile-card .tongji{
-    
-}
-.profile-card .cqu{
-    
-}
-.profile-card .ru{
-    /* color: rgb(183, 48, 48); */
-    /* font-weight: 600; */
 }
 
 .card .text-content .tags span {
@@ -72,7 +61,7 @@
     font-size: small;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: #dbdbdb;
+    background-color: #e6e6e6;
     transition: background-color 0.2s ease;
 }
 .card .text-content .tags span:hover {
@@ -89,7 +78,6 @@
     background-color: #f0f0f0;
 }
 
-/* any element with the class .ai-tag will have the following styles */
 * .ai-tag:hover {
     background-color: #38a18f !important;
     color: white;
