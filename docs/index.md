@@ -31,4 +31,6 @@ features:
     linkText: Learn more
   - title: Feb. 2024 - New research 📝 accepted by Journal of Tongji University
     details: Zhuang, Y. and Li, D. (2024) ‘Influence of Security Check Procedures on Transfer Efficiency from Railway Stations to Subways’, Journal of Tongji University (Natural Science), 52(2), pp. 252–259.
+    link: /research#influence-of-security-check-procedures-on-transfer-efficiency-from-railway-stations-to-subways
+    linkText: Learn more
 ---
