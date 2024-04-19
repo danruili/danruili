@@ -10,7 +10,7 @@ layout: doc
 
 <author>Danrui Li, Mathew Schwartz, Samuel S. Sohn, Sejong Yoon, Vladimir Pavlovic, Mubbasir Kapadia</author>
 
-![AttentionMove](./image/attentionBanner.png)
+![AttentionMove](./public/image/attentionBanner.png)
 
 How will attention affect walking speed in retail areas? We model how pedestrians will be attracted to environmental objects and how this will slow down their walking speed. Then we show how our model can help optimize the design of retail areas in transportation hubs. 
 
@@ -22,7 +22,7 @@ Published in Transportation Research Part C: Emerging Technologies, 2024.
 
 <author>Che-Jui Chang, Danrui Li, Deep Patel et al. (2024)</author>
 
-![M3Act](./image/m3act.png)
+![M3Act](./public/image/m3act.png)
 
 A synthetic data generator for multi-view multi-group multi-person human atomic actions and group activities, which facilitates the learning of human-centered tasks across single-person, multi-person, and multi-group conditions.
 
