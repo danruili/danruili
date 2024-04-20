@@ -64,10 +64,6 @@ Published in CAADRIA 2021.
 
 
 <style module>
-.button {
-  color: red;
-  font-weight: bold;
-}
 author {
   font-style: italic;
   color: #888;
