@@ -19,18 +19,60 @@ hero:
     - theme: alt
       text: ResearchGate
       link: https://www.researchgate.net/profile/Danrui_Li2
-
-features:
-  - title: Apr. 2024 - New research 📝 accepted by Transportation Research Part C
-    details: Li, D., Schwartz, M., Sohn, S. et al. (2024) Microscopic modeling of attention-based movement behaviors, Transportation Research Part C, 162.
-    link: /research#microscopic-modeling-of-attention-based-movement-behaviors/
-    linkText: Learn more
-  - title: Mar. 2024 - New research 📝 accepted by CVPR 2024
-    details: Chang, C.-J., Li, D., Patel, D. et al. (2024) Learning from Synthetic Human Group Activities. CVPR 2024.
-    link: /research#learning-from-synthetic-human-group-activities
-    linkText: Learn more
-  - title: Feb. 2024 - New research 📝 accepted by Journal of Tongji University
-    details: Zhuang, Y. and Li, D. (2024) ‘Influence of Security Check Procedures on Transfer Efficiency from Railway Stations to Subways’, Journal of Tongji University (Natural Science), 52(2), pp. 252–259.
-    link: /research#influence-of-security-check-procedures-on-transfer-efficiency-from-railway-stations-to-subways
-    linkText: Learn more
 ---
+<script setup>
+import smallButton from '.vitepress/theme/smallButton.vue'
+</script>
+
+
+<div class="skip">Selected Work</div>
+
+<div class="work">
+  
+  <div class="text-content">
+
+  ## Microscopic modeling of attention-based movement behaviors
+
+  <div class="author">Danrui Li, Mathew Schwartz, Samuel S. Sohn, Sejong Yoon, Vladimir Pavlovic, Mubbasir Kapadia</div>
+
+  <smallButton text="Project page" link="https://danruili.github.io/AttentionMove/"></smallButton> <smallButton text="Read article" link="https://arxiv.org/abs/2403.14892"></smallButton>
+
+  How will attention affect walking speed in retail areas? We model how pedestrians will be attracted to environmental objects and how this will slow down their walking speed. Then we show how our model can help optimize the design of retail areas in transportation hubs. 
+
+  Published in Transportation Research Part C: Emerging Technologies, 2024.
+  </div>
+
+
+  <div class="image-content">
+      <img src="./public/image/attentionBanner.png" alt="AttentionMove">
+  </div>
+</div>
+
+<div class="work">
+  
+  <div class="text-content">
+
+  ## Learning from Synthetic Human Group Activities
+
+  <div class="author">Che-Jui Chang, Danrui Li, Deep Patel et al. (2024)</div>
+
+  <smallButton text="Project page" link="https://cjerry1243.github.io/M3Act/"></smallButton> <smallButton text="Read article" link="https://openaccess.thecvf.com/content/CVPR2024/papers/Chang_Learning_from_Synthetic_Human_Group_Activities_CVPR_2024_paper.pdf"></smallButton>
+
+  A synthetic data generator for multi-view multi-group multi-person human atomic actions and group activities, which facilitates the learning of human-centered tasks across single-person, multi-person, and multi-group conditions.
+
+  Published in CVPR 2024.
+  </div>
+  <div class="image-content">
+      <img src="./public/image/m3act.png" alt="M3Act">
+  </div>
+</div>
+
+## Influence of Security Check Procedures on Transfer Efficiency from Railway Stations to Subways
+
+<div class="author">Yu Zhuang, Danrui Li (2024)</div>
+
+<smallButton text="Read article" link="http://dx.doi.org/10.11908/j.issn.0253-374x.22209"></smallButton>
+
+The influence of arriving passengers and the interaction effects between external factors are compared in two scenarios: the mutual recognition of security checks and the application of face recognition systems.
+
+Published in Journal of Tongji University.
