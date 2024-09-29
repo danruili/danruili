@@ -161,14 +161,14 @@ export default {
 .particle-canvas {
   position: absolute;
   z-index: -1;
-  height: 60vh;
+  height: 85vh;
   min-height: 400px;
   background-size: cover;
 }
 .particle-container {
   position: absolute;
   width: 100%;
-  height: 60vh;
+  height: 85vh;
   overflow: hidden;
   min-height: 400px;
 }

@@ -1,10 +1,14 @@
 <template>
-    <button class="smallButton" @click="openLink">{{ text }}</button>
-  </template>
+    <!-- <span class="link-icon">•</span> -->
+    <span class="link-icon">></span>
+    <button class="linkButton" @click="openLink">
+      <span class="link-text">{{ text }}</span>
+    </button>
+</template>
   
 <script>
   export default {
-    name: 'smallButton',
+    name: 'linkButton',
     props: {
       text: {
         type: String,
@@ -23,24 +27,27 @@
       },
     },
   }
-  </script>
+</script>
   
 <style scoped>
-  .smallButton {
-    background-color: var(--vp-button-alt-bg);  /* Light gray background */
+  .linkButton {
     color: var(--vp-button-alt-text);              /* Dark gray text */
-    padding: 3px 10px;
-    border: none;
-    border-radius: 10px;          /* Rounded corners */
-    font-size: 12px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-right: 15px;
+    font-size: medium;
+    /* text-decoration: underline; */
   }
   
-  .smallButton:hover {
-    background-color: var(--vp-button-alt-hover-bg);       /* Slightly darker on hover */
+  .linkButton:hover {
+    color: var(--vp-button-brand-bg);
   }
-  </style>
+
+  .link-icon {
+    color: var(--vp-button-brand-bg);
+    font-weight: 900;
+    margin-right: 0.5em;
+  }
+</style>
   

@@ -21,13 +21,16 @@ const { Layout } = DefaultTheme
 .skip {
   margin-top: 40px;
   font-size: xx-large;
-  /* color: #3468c9; */
   font-weight: 600;
 }
 
 .author {
+  font-size: small;
+}
+.pub {
   font-style: italic;
   color: #888;
+  font-size: small;
 }
 
 .work {

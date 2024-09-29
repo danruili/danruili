@@ -2,7 +2,7 @@
 outline: deep
 layout: doc
 ---
-# Curriculum Vitae
+# About me
 
 ## Education
 
