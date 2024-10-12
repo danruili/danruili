@@ -17,7 +17,7 @@ import workItem from '.vitepress/theme/workItem.vue'
     description="How will attention affect walking speed in retail areas? We model how pedestrians will be attracted to environmental objects and how this will slow down their walking speed. Then we show how our model can help optimize the design of retail areas in transportation hubs."
     projectLink="https://danruili.github.io/AttentionMove/"
     articleLink="https://arxiv.org/abs/2403.14892"
-    imagePath="./public/image/attentionBanner.png"
+    imagePath="./image/attentionBanner.png"
 />
 
 ## Learning from Synthetic Human Group Activities
@@ -27,7 +27,7 @@ import workItem from '.vitepress/theme/workItem.vue'
   description="A synthetic data generator for multi-view multi-group multi-person human atomic actions and group activities, which facilitates the learning of human-centered tasks across single-person, multi-person, and multi-group conditions."
   projectLink="https://cjerry1243.github.io/M3Act/"
   articleLink="https://openaccess.thecvf.com/content/CVPR2024/papers/Chang_Learning_from_Synthetic_Human_Group_Activities_CVPR_2024_paper.pdf"
-  imagePath="./public/image/m3act.png"
+  imagePath="https://raw.githubusercontent.com/danruili/danruili/refs/heads/vite/docs/public/image/m3act.png"
 />
 
 
