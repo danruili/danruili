@@ -23,42 +23,18 @@ hero:
 <script setup>
 import linkButton from '.vitepress/theme/linkButton.vue'
 import ImageFullscreenViewer from '.vitepress/theme/ImageFullscreenViewer.vue'
+import workItem from '.vitepress/theme/workItem.vue'
 </script>
 
 
-<div class="skip">Selected Work</div>
+<div style="margin-top:60px"></div>
 
-<div class="work">
-  
-  <div class="text-content">
+# Recent Work
+<div style="margin-top:-30px"></div>
+<!--@include: ./research.md#recent-->
 
-  ## Microscopic modeling of attention-based movement behaviors
 
-  <div class="author">Danrui Li, Mathew Schwartz, Samuel S. Sohn, Sejong Yoon, Vladimir Pavlovic, Mubbasir Kapadia</div>
-  <span class="pub">Transportation Research Part C: Emerging Technologies, 2024.</span>
+<style scoped>
 
-  How will attention affect walking speed in retail areas? We model how pedestrians will be attracted to environmental objects and how this will slow down their walking speed. Then we show how our model can help optimize the design of retail areas in transportation hubs. 
-
-  <linkButton text="Project page" link="https://danruili.github.io/AttentionMove/"/> <linkButton text="Read article" link="https://arxiv.org/abs/2403.14892"/>
-  </div>
-
-  <ImageFullscreenViewer imageSrc="./public/image/attentionBanner.png" alt="AttentionMove" />
-
-</div>
-
-<div class="work">
-  
-  <div class="text-content">
-
-  ## Learning from Synthetic Human Group Activities
-
-  <div class="author">Che-Jui Chang, Danrui Li, Deep Patel et al. (2024)</div>
-  <span class="pub">CVPR 2024</span>
-
-  A synthetic data generator for multi-view multi-group multi-person human atomic actions and group activities, which facilitates the learning of human-centered tasks across single-person, multi-person, and multi-group conditions.
-
-  <linkButton text="Project page" link="https://cjerry1243.github.io/M3Act/"/> <linkButton text="Read article" link="https://openaccess.thecvf.com/content/CVPR2024/papers/Chang_Learning_from_Synthetic_Human_Group_Activities_CVPR_2024_paper.pdf"/>
-  </div>
-  <ImageFullscreenViewer imageSrc="./public/image/m3act.png" alt="M3Act" />
-</div>
+</style>
 
