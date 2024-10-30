@@ -103,7 +103,7 @@
   
   .fullscreen-container {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     max-width: 90%;
     max-height: 90%;
     display: flex;
@@ -112,9 +112,9 @@
   }
   
   .fullscreen-image {
-    width: 100%;
+    width: 90%;
     height: auto;
-    max-height: 100%;
+    max-height: 90%;
   }
 
 </style>

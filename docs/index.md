@@ -35,6 +35,13 @@ import workItem from '.vitepress/theme/workItem.vue'
 
 
 <style scoped>
-
+h2 {
+  max-width: 65%;
+}
+@media (max-width: 750px) {
+  h2 {
+    max-width: 100%;
+  }
+}
 </style>
 

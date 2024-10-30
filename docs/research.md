@@ -10,6 +10,25 @@ import workItem from '.vitepress/theme/workItem.vue'
 
 <!-- #region recent -->
 
+## From Words to Worlds: Transforming One-line Prompts into Multi-modal Digital Stories with LLM Agents
+<workItem 
+    authors="Danrui Li, Samuel S. Sohn, Sen Zhang, et al."
+    publication="ACM SIGGRAPH Conference on Motion, Interaction, and Games (MIG 2024)"
+    description="Utilizing Large Language Models as an organizer of various generative tools, the StoryAgent framework automates digital storytelling with fine-grained control over intermediate products."
+    articleLink="https://doi.org/10.1145/3677388.3696321"
+    preprintLink="https://arxiv.org/abs/2406.10478"
+    imagePath="./image/storyagent.png"
+/>
+
+## TrajDiffuse: A Conditional Diffusion Model for Environment-Aware Trajectory Prediction
+<workItem 
+    authors="Qingze(Tony) Liu, Danrui Li, Samuel S. Sohn, Sejong Yoon, Mubbasir Kapadia, Vladimir Pavlovic."
+    publication="Accepted by 2024 International Conference on Pattern Recognition (ICPR)"
+    description="We form the trajectory prediction problem as a denoising impaint task and design a map-based guidance term for the diffusion process. TrajDiffuse is able to generate trajectory predictions that match or exceed the accuracy and diversity of the SOTA, while adhering almost perfectly to environmental constraints."
+    preprintLink="https://arxiv.org/abs/2410.10804"
+    imagePath="./image/trajdiffuse.png"
+/>
+
 ## Microscopic modeling of attention-based movement behaviors
 <workItem 
     authors="Danrui Li, Mathew Schwartz, Samuel S. Sohn, Sejong Yoon, Vladimir Pavlovic, Mubbasir Kapadia (2024)"
@@ -20,6 +39,8 @@ import workItem from '.vitepress/theme/workItem.vue'
     imagePath="./image/attentionBanner.png"
 />
 
+<!-- #endregion recent -->
+
 ## Learning from Synthetic Human Group Activities
 <workItem 
   authors="Che-Jui Chang, Danrui Li, Deep Patel et al. (2024)"
@@ -29,9 +50,6 @@ import workItem from '.vitepress/theme/workItem.vue'
   articleLink="https://openaccess.thecvf.com/content/CVPR2024/papers/Chang_Learning_from_Synthetic_Human_Group_Activities_CVPR_2024_paper.pdf"
   imagePath="https://raw.githubusercontent.com/danruili/danruili/refs/heads/vite/docs/public/image/m3act.png"
 />
-
-
-<!-- #endregion recent -->
 
 ## Influence of Security Check Procedures on Transfer Efficiency from Railway Stations to Subways
 <workItem 

@@ -8,6 +8,7 @@
       <p>{{ description }}</p>
       <linkButton v-if="projectLink" text="Project page" :link="projectLink"/>
       <linkButton v-if="articleLink" text="Read article" :link="articleLink"/>  
+      <linkButton v-if="preprintLink" text="Read preprint" :link="preprintLink"/>
     </div>
 
     <ImageFullscreenViewer class="text-below-img" v-if="imagePath" :imageSrc="imagePath" />
@@ -50,6 +51,11 @@ import linkButton from './linkButton.vue'
         default: '',
       },
       articleLink: {
+        type: String,
+        required: false,
+        default: '',
+      },
+      preprintLink: {
         type: String,
         required: false,
         default: '',
