@@ -17,6 +17,9 @@ hero:
       text: LinkedIn
       link: https://www.linkedin.com/in/danrui-li-a4b5a5189/
     - theme: alt
+      text: Google Scholar
+      link: https://scholar.google.com/citations?user=7_kfDDYAAAAJ&hl=en/
+    - theme: alt
       text: ResearchGate
       link: https://www.researchgate.net/profile/Danrui_Li2
 ---
@@ -29,7 +32,7 @@ import workItem from '.vitepress/theme/workItem.vue'
 
 <div style="margin-top:60px"></div>
 
-# Recent Work
+<h1>Recent Work</h1>
 <div style="margin-top:-30px"></div>
 <!--@include: ./research.md#recent-->
 

@@ -12,9 +12,10 @@ import workItem from '.vitepress/theme/workItem.vue'
 
 ## From Words to Worlds: Transforming One-line Prompts into Multi-modal Digital Stories with LLM Agents
 <workItem 
-    authors="Danrui Li, Samuel S. Sohn, Sen Zhang, et al."
+    authors="Danrui Li, Samuel S. Sohn, Sen Zhang, Che-Jui Chang, Mubbasir Kapadia."
     publication="ACM SIGGRAPH Conference on Motion, Interaction, and Games (MIG 2024)"
     description="Utilizing Large Language Models as an organizer of various generative tools, the StoryAgent framework automates digital storytelling with fine-grained control over intermediate products."
+    projectLink="https://danruili.github.io/WordsToWorlds/"
     articleLink="https://doi.org/10.1145/3677388.3696321"
     preprintLink="https://arxiv.org/abs/2406.10478"
     imagePath="./image/storyagent.png"
