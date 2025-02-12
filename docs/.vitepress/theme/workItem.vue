@@ -2,7 +2,21 @@
   <div class="work">
   
     <div class="text-content">
-      <h2 v-if="title">{{ title }}</h2>
+      <h2 class="title" v-if="title">{{ title }}</h2>
+      
+      <div v-if="tags" class="tags">
+        <span v-for="tag in tags.split(',')" :key="tag" :style="{
+          borderColor: 
+          tag.trim() === 'Architecture design' ? '#BF8230A2' : 
+          tag.trim() === 'Human behavior modeling' ? '#478DD8A2' : 
+          tag.trim() === 'LLM for design' ? '#2CA77CA2' : '#7A7A7A82'
+          ,
+          color:
+          tag.trim() === 'Architecture design' ? '#BF8230' :
+          tag.trim() === 'Human behavior modeling' ? '#478DD8' :
+          tag.trim() === 'LLM for design' ? '#2CA77C' : '#7A7A7A'
+           }">{{ '&#9873 '+tag.trim() }}</span>
+      </div>
       <div class="author">{{ authors }}</div>
       <span class="pub">{{ publication }}</span>
       <p>{{ description }}</p>
@@ -26,6 +40,11 @@ import linkButton from './linkButton.vue'
     name: 'workItem',
     props: {
       title: {
+        type: String,
+        required: false,
+        default: '',
+      },
+      tags: {
         type: String,
         required: false,
         default: '',
@@ -98,6 +117,21 @@ import linkButton from './linkButton.vue'
   font-style: italic;
   color: #888;
   font-size: small;
+}
+.tags {
+  /* margin-bottom: 8px; */
+  gap: 5px;
+  display: flex;
+}
+.tags span{
+  /* padding: 0px 5px; */
+  /* border-radius: 4px; */
+  font-size: small;
+  /* border-width: 1.5px;
+  border-style: solid; */
+}
+.work .text-content .title {
+  margin-bottom: 10px;
 }
 
 /* when viewed from a mobile */

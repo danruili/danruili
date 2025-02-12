@@ -19,6 +19,7 @@ import workItem from '.vitepress/theme/workItem.vue'
     articleLink="https://doi.org/10.1145/3677388.3696321"
     preprintLink="https://arxiv.org/abs/2406.10478"
     imagePath="./image/storyagent.png"
+    tags="LLM for design, Digital storytelling"
 />
 
 ## TrajDiffuse: A Conditional Diffusion Model for Environment-Aware Trajectory Prediction
@@ -28,6 +29,7 @@ import workItem from '.vitepress/theme/workItem.vue'
     description="We form the trajectory prediction problem as a denoising impaint task and design a map-based guidance term for the diffusion process. TrajDiffuse is able to generate trajectory predictions that match or exceed the accuracy and diversity of the SOTA, while adhering almost perfectly to environmental constraints."
     preprintLink="https://arxiv.org/abs/2410.10804"
     imagePath="./image/trajdiffuse.png"
+    tags="Human behavior modeling, Trajectory prediction"
 />
 
 ## Microscopic modeling of attention-based movement behaviors
@@ -38,6 +40,7 @@ import workItem from '.vitepress/theme/workItem.vue'
     projectLink="https://danruili.github.io/AttentionMove/"
     articleLink="https://arxiv.org/abs/2403.14892"
     imagePath="./image/attentionBanner.png"
+    tags="Human behavior modeling, Pedestrian simulation"
 />
 
 <!-- #endregion recent -->
@@ -50,6 +53,7 @@ import workItem from '.vitepress/theme/workItem.vue'
   projectLink="https://cjerry1243.github.io/M3Act/"
   articleLink="https://openaccess.thecvf.com/content/CVPR2024/papers/Chang_Learning_from_Synthetic_Human_Group_Activities_CVPR_2024_paper.pdf"
   imagePath="https://raw.githubusercontent.com/danruili/danruili/refs/heads/vite/docs/public/image/m3act.png"
+  tags="Human behavior modeling, Synthetic data"
 />
 
 ## Influence of Security Check Procedures on Transfer Efficiency from Railway Stations to Subways
@@ -58,6 +62,7 @@ import workItem from '.vitepress/theme/workItem.vue'
   publication="Journal of Tongji University"
   description="The influence of arriving passengers and the interaction effects between external factors are compared in two scenarios: the mutual recognition of security checks and the application of face recognition systems."
   articleLink="http://dx.doi.org/10.11908/j.issn.0253-374x.22209"
+  tags="Human behavior modeling, Architecture design, Pedestrian simulation"
   />
 
 ## How Do Retail Stores Affect Pedestrian Walking Speed?
@@ -66,6 +71,7 @@ import workItem from '.vitepress/theme/workItem.vue'
     publication="Traffic and Granular Flow 2022"
     description="A detailed empirical observations that focus on pedestrian speed variations and their dynamics in front of stores."
     articleLink="https://link.springer.com/chapter/10.1007/978-981-99-7976-9_27"
+    tags="Human behavior modeling"
     />
 
 ## Sensitivity Analysis of Pedestrian Simulation on Train station platforms
@@ -74,6 +80,7 @@ import workItem from '.vitepress/theme/workItem.vue'
     publication="CAADRIA 2021"
     description="Which parameters are most sensitive, thus most important to calibrate, in pedestrian simulation models on train station platforms? We conduct a sensitivity analysis to answer this question."
     articleLink="https://doi.org/10.52842/conf.caadria.2021.2.529"
+    tags="Human behavior modeling, Architecture design, Pedestrian simulation"
     />
 
 ## Quantification and Typology Methods for Spatial Regionalism
@@ -81,6 +88,7 @@ import workItem from '.vitepress/theme/workItem.vue'
     authors="Danrui Li, Yihao Wu, Liuqing Wu"
     publication="CAADRIA 2021"
     description="We propose a method to quantify spatial regionalism and a typology to classify different types of spatial regionalism."
+    tags="Architecture design"
     />
 
 
