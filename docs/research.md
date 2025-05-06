@@ -10,6 +10,17 @@ import workItem from '.vitepress/theme/workItem.vue'
 
 <!-- #region recent -->
 
+## ArchSeek: Retrieving Architectural Case Studies Using Vision-Language Models
+<workItem 
+    authors="Danrui Li, Yichao Shi, Yaluo Wang, Ziying Shi, Mubbasir Kapadia."
+    publication="CAAD Futures 2025"
+    description="Search for architectural case studies using natural language queries, images, or just a few mouse clicks."
+    projectLink="https://danruili.github.io/ArchSeek/"
+    preprintLink="https://arxiv.org/abs/2503.18680"
+    imagePath="./image/archseek.png"
+    tags="LLM for design, Information retrieval"
+/>
+
 ## From Words to Worlds: Transforming One-line Prompts into Multi-modal Digital Stories with LLM Agents
 <workItem 
     authors="Danrui Li, Samuel S. Sohn, Sen Zhang, Che-Jui Chang, Mubbasir Kapadia."
@@ -22,15 +33,6 @@ import workItem from '.vitepress/theme/workItem.vue'
     tags="LLM for design, Digital storytelling"
 />
 
-## TrajDiffuse: A Conditional Diffusion Model for Environment-Aware Trajectory Prediction
-<workItem 
-    authors="Qingze(Tony) Liu, Danrui Li, Samuel S. Sohn, Sejong Yoon, Mubbasir Kapadia, Vladimir Pavlovic."
-    publication="Accepted by 2024 International Conference on Pattern Recognition (ICPR)"
-    description="We form the trajectory prediction problem as a denoising impaint task and design a map-based guidance term for the diffusion process. TrajDiffuse is able to generate trajectory predictions that match or exceed the accuracy and diversity of the SOTA, while adhering almost perfectly to environmental constraints."
-    preprintLink="https://arxiv.org/abs/2410.10804"
-    imagePath="./image/trajdiffuse.png"
-    tags="Human behavior modeling, Trajectory prediction"
-/>
 
 ## Microscopic modeling of attention-based movement behaviors
 <workItem 
@@ -44,6 +46,17 @@ import workItem from '.vitepress/theme/workItem.vue'
 />
 
 <!-- #endregion recent -->
+
+
+## TrajDiffuse: A Conditional Diffusion Model for Environment-Aware Trajectory Prediction
+<workItem 
+    authors="Qingze(Tony) Liu, Danrui Li, Samuel S. Sohn, Sejong Yoon, Mubbasir Kapadia, Vladimir Pavlovic."
+    publication="Accepted by 2024 International Conference on Pattern Recognition (ICPR)"
+    description="We form the trajectory prediction problem as a denoising impaint task and design a map-based guidance term for the diffusion process. TrajDiffuse is able to generate trajectory predictions that match or exceed the accuracy and diversity of the SOTA, while adhering almost perfectly to environmental constraints."
+    preprintLink="https://arxiv.org/abs/2410.10804"
+    imagePath="./image/trajdiffuse.png"
+    tags="Human behavior modeling, Trajectory prediction"
+/>
 
 ## Learning from Synthetic Human Group Activities
 <workItem 

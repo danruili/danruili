@@ -18,7 +18,7 @@
            }">{{ '&#9873 '+tag.trim() }}</span>
       </div>
       <div class="author">{{ authors }}</div>
-      <span class="pub">{{ publication }}</span>
+      <div class="pub">{{ publication }}</div>
       <p>{{ description }}</p>
       <linkButton v-if="projectLink" text="Project page" :link="projectLink"/>
       <linkButton v-if="articleLink" text="Read article" :link="articleLink"/>  
