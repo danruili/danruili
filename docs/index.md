@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Research
-      link: /research
+      link: /#research
     - theme: brand
       text: About Me
       link: /cv
@@ -27,24 +27,24 @@ hero:
 import linkButton from '.vitepress/theme/linkButton.vue'
 import ImageFullscreenViewer from '.vitepress/theme/ImageFullscreenViewer.vue'
 import workItem from '.vitepress/theme/workItem.vue'
+import workList from '.vitepress/theme/workList.vue'
+import works from '.vitepress/theme/works.json'
+
+const recent_work = works.slice(0, 3)
+const other_work = works.slice(3)
 </script>
 
 
 <div style="margin-top:60px"></div>
 
-<h1>Recent Work</h1>
-<div style="margin-top:-30px"></div>
-<!--@include: ./research.md#recent-->
+<h1 id="research">Research</h1>
 
+<workList :works="recent_work" />
+
+<div style="margin-top:1rem"></div>
+
+<workList :works="other_work" :card=true />
 
 <style scoped>
-h2 {
-  max-width: 65%;
-}
-@media (max-width: 750px) {
-  h2 {
-    max-width: 100%;
-  }
-}
 </style>
 
