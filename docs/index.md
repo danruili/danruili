@@ -41,7 +41,7 @@ const other_work = works.slice(3)
 
 <workList :works="recent_work" />
 
-<div style="margin-top:1rem"></div>
+<div style="margin-top:3rem"></div>
 
 <workList :works="other_work" :card=true />
 

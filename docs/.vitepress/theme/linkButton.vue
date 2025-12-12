@@ -36,7 +36,7 @@
     margin-bottom: 0px;
     margin-top: 5px;
     margin-right: 15px;
-    font-size: medium;
+    font-size: small;
     /* text-decoration: underline; */
   }
   

@@ -110,7 +110,7 @@ import linkButton from './linkButton.vue'
     display: flex;
     justify-content: center;
     flex-direction: row;
-    column-gap: 36px;
+    column-gap: 2rem;
 }
 .work .text-content {
     flex: 2
