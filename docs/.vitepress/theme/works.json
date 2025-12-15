@@ -3,7 +3,7 @@
     "title": "Cardiverse: Harnessing LLMs for Novel Card Game Prototyping",
     "authors": "Danrui Li, Yichao Shi, Yaluo Wang, Ziying Shi, Mubbasir Kapadia.",
     "publication": "EMNLP 2025",
-    "description": "Cardiverse is an LLM-powered framework for rapid card game prototyping.",
+    "description": "Given a textual card game description, Cardiverse uses an LLM-powered framework to create novel and playable game variant prototypes.",
     "projectLink": "https://github.com/danruili/Cardiverse",
     "preprintLink": "https://arxiv.org/abs/2502.07128",
     "imagePath": "./image/cardiverse.png",
