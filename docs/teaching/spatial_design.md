@@ -100,7 +100,7 @@ Using dimensions such as basic geometry, formal transformation, formal operation
 This assignment aims to develop an understanding of **form-making as a generative process**, emphasizing formal logic, transformation sequences, and spatial articulation as foundational tools in architectural design thinking.
 
 Here is an assignment example:
-![Example of Formal Transformation](../image/space_assignment_1.png)
+![Example of Formal Transformation](space_assignment_1.png)
 
 <CollapsibleTextFrame title="❓ How was the students' performance?">
 <p>Most students were able to complete the variation assignment. But their variation techniques lack diversity: most of them will simply follow the techniques in the example assignment. It is reasonable for junior students as they may not possess a library of form manipulation toolsets in their mind.</p>
@@ -124,7 +124,7 @@ Using the **given base diagram**, create a color composition based on **sequenti
   - The total number of colors should be **8–10**
 - Design a **meandering path** that visually and conceptually connects different color families
 
-![Base Diagram for Color Composition](../image/spatial_assignment_2_1.svg)
+![Base Diagram for Color Composition](spatial_assignment_2_1.svg)
 
 #### Task 2: Constructing a Spatial Sequence Through Color
 
@@ -136,7 +136,7 @@ Use color as a primary tool to define and differentiate space.
 - **Adjacent white color fields** should be interpreted as a **continuous spatial volume**, extended as a whole
 - All architectural elements involved in defining space—including **walls, ceilings, and planes**—must be assigned the **corresponding color** of the space they define
 
-![Example of Spatial Model](../image/space_assignment_2_2.png)
+![Example of Spatial Model](space_assignment_2_2.png)
 
 <CollapsibleTextFrame title="❓ How was the students' performance?">
 <p>1/3 students completed it in a volumetric composition way, without a design awareness of <i>void</i>. 1/3 students were able to divide space by various methods, but not good at controling the extent of space enclosure. 1/3 students did it very well.</p>
@@ -157,7 +157,7 @@ You will work in group of 2-3 to complete the following tasks.
 - Based on the two case studies, select key formal/spatial characteristics that you find most interesting. Mix the selected characteristics into a new design project based on a given design brief.
 
 *Example outcomes:*
-![Example of Mixed Design](../image/space_final_project.jpg)
+![Example of Mixed Design](space_final_project.jpg)
 
 <CollapsibleTextFrame title="❓ How was the students' performance?">
 <p>Students could correctly identify and summarize the design characteristics from design reference using the learned concepts. </p>
