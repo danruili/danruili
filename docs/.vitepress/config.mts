@@ -10,7 +10,12 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Research', link: '/#research' },
-      { text: 'About me', link: '/cv' }
+      { text: 'Teaching', items: [
+        { text: 'Overview', link: '/teaching/overview' },
+        { text: 'AI in Architecture Design', link: '/teaching/ai_design' },
+        { text: 'Space and Form', link: '/teaching/spatial_design' },
+      ] },
+      { text: 'About me', link: '/cv' },
     ],
 
     // sidebar: [
