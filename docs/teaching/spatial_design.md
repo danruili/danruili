@@ -15,7 +15,14 @@ import CollapsibleTextFrame from '../.vitepress/theme/collapsibleTextFrame.vue'
 <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 </div>
 
-This is a 7-week-long, 3-hour-each course for around 30 junior environment design undergraduates, designed and carried out by me at Xianda College, Shanghai International Studies University in Fall 2021. 
+Basic information:
+- **Role**: Main Instructor, Course Designer
+- **Institution**: Xianda College, Shanghai International Studies University, China.
+- **Term**: Fall 2021
+- **Target Students**: First-year undergraduate students majoring in Environmental Design.
+- **Course Details**: Compulsory, 3 credits
+- **Logistics**: 7 weeks (3 hours/week)
+- **Class Size**: ~30 students
 
 ## Overview
 
