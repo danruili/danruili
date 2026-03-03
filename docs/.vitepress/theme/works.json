@@ -1,11 +1,22 @@
 [
-   {
+  {
+    "title": "Early-stage architecture design assistance by LLMs and knowledge graphs",
+    "authors": "Danrui Li, Yichao Shi, Mathew Schwartz, Mubbasir Kapadia.",
+    "publication": "Automation in Construction",
+    "description": "We built a domain-specific knowledge graph for architecture design and integrated it with LLMs to assist early-stage design question answering.",
+    "projectLink": "https://github.com/danruili/ArchLogicRAG",
+    "articleLink": "https://doi.org/10.1016/j.autcon.2025.106756",
+    "imagePath": "./image/archlogicgraph.png",
+    "tags": "LLM for design, RAG, Architecture design, Information retrieval"
+  },
+  {
     "title": "Cardiverse: Harnessing LLMs for Novel Card Game Prototyping",
-    "authors": "Danrui Li, Yichao Shi, Yaluo Wang, Ziying Shi, Mubbasir Kapadia.",
+    "authors": "Danrui Li, Sen Zhang, Sam S. Sohn, Kaidong Hu, Muhammad Usman, Mubbasir Kapadia.",
     "publication": "EMNLP 2025",
     "description": "Given a textual card game description, Cardiverse uses an LLM-powered framework to create novel and playable game variant prototypes.",
-    "projectLink": "https://github.com/danruili/Cardiverse",
+    "projectLink": "https://danruili.github.io/Cardiverse/",
     "preprintLink": "https://arxiv.org/abs/2502.07128",
+    "articleLink": "https://aclanthology.org/2025.emnlp-main.1511/",
     "imagePath": "./image/cardiverse.png",
     "tags": "LLM for design, RAG, GameAI, Program synthesis"
   },

@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Danrui Li"
   text: ""
-  tagline: PhD Student in Computer Science at Rutgers University, leveraging large language models and machine learning for creative design and pedestrian modeling.
+  tagline: PhD Student in Computer Science at Rutgers University, applying large language models and machine learning to creative design and pedestrian modeling.
   actions:
     - theme: brand
       text: Research
