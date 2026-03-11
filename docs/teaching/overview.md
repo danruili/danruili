@@ -4,6 +4,11 @@ layout: doc
 ---
 # Teaching
 
+### Intro to Computer Graphics - Teaching Assistant
+Rutgers University. Spring 2026.
+- Gave weekly recitations and invited lectures on computer graphics topics, ranging from crowd simulation to procedural content generation.
+- See [course page](/teaching/computer_graphics) for MIT-licensed teaching materials.
+
 ### AI in Architecture Design
 Course material under development.
 - Designed for senior undergrad/graduate students in architecture design.
