@@ -16,6 +16,8 @@ import workItem from './workItem.vue'
       :publication="item.publication"
       :description="item.description"
       :projectLink="item.projectLink || null"
+      :datasetLink="item.datasetLink || null"
+      :repoLink="item.repoLink || null"
       :preprintLink="item.preprintLink || null"
       :articleLink="item.articleLink || null"
       :imagePath="item.imagePath || null"

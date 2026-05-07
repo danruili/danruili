@@ -1,10 +1,21 @@
 [
   {
+    "title": "AssemblyBench: Physics-Aware Assembly of Complex Industrial Objects",
+    "authors": "Danrui Li, Jiahao Zhang, Bernhard Egger, Moitreya Chatterjee, Suhas Lohit, Tim K. Marks, Anoop Cherian.",
+    "publication": "CVPR 2026, work done at Mitsubishi Electric Research Laboratories.",
+    "description": "We introduce AssemblyBench, a synthetic dataset of industrial objects with multimodal instruction manuals, corresponding 3D part models, and part assembly trajectories. We also propose a transformer-based model, which uses the instructional data to predict part assembly process.",
+    "projectLink": "https://www.merl.com/research/highlights/assemblybench",
+    "repoLink": "https://github.com/merlresearch/AssemblyBench",
+    "datasetLink": "https://zenodo.org/records/19742725",
+    "imagePath": "./image/assemblybench.jpg",
+    "tags": "LLM, 3D understanding, Object assembly"
+  },
+  {
     "title": "Early-stage architecture design assistance by LLMs and knowledge graphs",
     "authors": "Danrui Li, Yichao Shi, Mathew Schwartz, Mubbasir Kapadia.",
     "publication": "Automation in Construction",
-    "description": "We built a domain-specific knowledge graph for architecture design and integrated it with LLMs to assist early-stage design question answering.",
-    "projectLink": "https://github.com/danruili/ArchLogicRAG",
+    "description": "We built a LLM-based question-answering framework with precedent design references. It combines a custom architecture-focused knowledge graph with retrieval-augmented generation to better use visual + textual design data, assisting novel architects in early-stage design.",
+    "repoLink": "https://github.com/danruili/ArchLogicRAG",
     "articleLink": "https://doi.org/10.1016/j.autcon.2025.106756",
     "imagePath": "./image/archlogicgraph.png",
     "tags": "LLM for design, RAG, Architecture design, Information retrieval"

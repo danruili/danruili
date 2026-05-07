@@ -20,7 +20,9 @@
       <div class="pub">{{ publication }}</div>
       <p>{{ description }}</p>
       <linkButton v-if="projectLink" text="Project page" :link="projectLink"/>
-      <linkButton v-if="articleLink" text="Read article" :link="articleLink"/>  
+      <linkButton v-if="datasetLink" text="View dataset" :link="datasetLink"/>
+      <linkButton v-if="repoLink" text="Code repo" :link="repoLink"/>
+      <linkButton v-if="articleLink" text="Read article" :link="articleLink"/>
       <linkButton v-if="preprintLink" text="Read preprint" :link="preprintLink"/>
     </div>
 
@@ -67,6 +69,16 @@ import linkButton from './linkButton.vue'
         default: 'Description',
       },
       projectLink: {
+        type: String,
+        required: false,
+        default: '',
+      },
+      datasetLink: {
+        type: String,
+        required: false,
+        default: '',
+      },
+      repoLink: {
         type: String,
         required: false,
         default: '',
