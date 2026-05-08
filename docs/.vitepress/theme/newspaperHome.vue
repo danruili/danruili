@@ -19,7 +19,10 @@ const workTrack = ref(null)
 const navLinks = [
   { text: 'Research', href: '#research' },
   { text: 'Teaching', href: '#teaching' },
-  { text: 'Work', href: '#work' },
+  { text: 'Work', href: '#work' }
+]
+
+const externalLinks = [
   { text: 'Google Scholar', href: 'https://scholar.google.com/citations?user=7_kfDDYAAAAJ&hl=en/' },
   { text: 'LinkedIn', href: 'https://www.linkedin.com/in/danrui-li-a4b5a5189/' },
   { text: 'GitHub', href: 'https://github.com/danruili' }
@@ -62,9 +65,6 @@ function itemLinks(item) {
     .map(([key, text]) => ({ text, href: item[key] }))
 }
 
-function isExternal(href) {
-  return /^https?:\/\//.test(href)
-}
 
 function chunkItems(items, size) {
   const chunks = []
@@ -138,13 +138,29 @@ function scrollWork(direction) {
             pedestrian movement modeling.
           </p>
 
-          <nav class="nav-strip" aria-label="Homepage shortcuts">
+          <p class="section-kicker nav-strip-label">Navigation</p>
+
+          <nav class="nav-strip" aria-label="Homepage navigation">
             <a
               v-for="link in navLinks"
               :key="link.text"
               :href="link.href"
-              :target="isExternal(link.href) ? '_blank' : undefined"
-              :rel="isExternal(link.href) ? 'noopener noreferrer' : undefined"
+              class="nav-strip-link nav-strip-link--internal"
+            >
+              {{ link.text }}
+            </a>
+          </nav>
+
+          <p class="section-kicker nav-strip-label">External</p>
+
+          <nav class="nav-strip" aria-label="External profiles">
+            <a
+              v-for="link in externalLinks"
+              :key="link.text"
+              :href="link.href"
+              class="nav-strip-link nav-strip-link--external"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {{ link.text }}
             </a>
@@ -388,26 +404,55 @@ function scrollWork(direction) {
 }
 
 .nav-strip {
-  display: flex;
+  display: grid;
   align-items: flex-start;
-  flex-direction: column;
-  gap: 0.45rem;
-  margin-top: 1rem;
+  column-gap: 1.35rem;
+  grid-template-columns: repeat(3, max-content);
+  row-gap: 0.35rem;
+  margin-top: 0;
+}
+
+.profile-panel .nav-strip-label {
+  color: var(--paper-accent);
+  margin: 1rem 0 0.5rem;
 }
 
 .nav-strip a,
 .link-row a {
-  border-bottom: 1px solid currentColor;
-  color: var(--paper-secondary);
   font-size: 0.86rem;
-  font-weight: 650;
   line-height: 1.35;
   text-decoration: none;
 }
 
+.nav-strip a {
+  border-bottom: 1px solid transparent;
+  font-weight: 400;
+}
+
+.link-row a {
+  border-bottom: 1px solid currentColor;
+  color: var(--paper-secondary);
+  font-weight: 650;
+}
+
+.nav-strip-link--internal {
+  color: var(--paper-muted);
+}
+
+.nav-strip-link--external {
+  color: var(--paper-muted);
+}
+
 .nav-strip a:hover,
+.nav-strip a:focus-visible,
 .link-row a:hover {
+  border-bottom-color: currentColor;
   color: var(--paper-accent);
+}
+
+.nav-strip a:focus-visible {
+  outline: 2px solid var(--paper-accent);
+  outline-offset: 3px;
 }
 
 .front-page {
@@ -497,13 +542,13 @@ function scrollWork(direction) {
   padding-right: 1.35rem;
 }
 
-.profile-panel p,
+.profile-panel > p:not(.section-kicker),
 .theme-list li {
   font-size: 0.92rem;
   line-height: 1.5;
 }
 
-.profile-panel p {
+.profile-panel > p:not(.section-kicker) {
   color: var(--paper-muted);
   margin: 0;
 }
