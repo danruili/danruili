@@ -1,0 +1,63 @@
+[
+  {
+    "organization": "Mitsubishi Electric Research Laboratories",
+    "role": "Research Intern",
+    "dates": "Aug 2025 - Jan 2026",
+    "notes": [
+      "Proposed a user-manual-instructed 3D object assembly model; improved success rate in simulation-based assembly by 27%.",
+      "Designed LLM-based pipelines to synthesize multimodal assembly user manual dataset; used FreeCAD and Blender MCP."
+    ],
+    "links": [
+      { "text": "AssemblyBench [CVPR '26]", "href": "https://github.com/danruili/Cardiverse" }
+    ]
+  },
+  {
+    "organization": "Rutgers University - Intelligent Visual Interface Lab",
+    "role": "Research Assistant",
+    "dates": "Sep 2022 - Present",
+    "notes": [
+      "Designed LLM-based generative pipelines for interactive experiences, ranging from Unity-based animated story prototypes to card games.",
+      "Built multimodal design-assisting frameworks with human-in-the-loop, including a knowledge-graph RAG system for architectural case retrieval with 30% broader results."
+    ],
+    "links": [
+      { "text": "Cardiverse [EMNLP '25]", "href": "https://github.com/danruili/Cardiverse" },
+      { "text": "Words to Worlds [MIG '24] ", "href": "https://danruili.github.io/WordsToWorlds/" },
+      { "text": "ArchSeek [CAAD Future '25] ", "href": "https://danruili.github.io/ArchSeek/" },
+      { "text": "ArchLogicRAG [AutoCon] ", "href": "https://doi.org/10.1016/j.autcon.2025.106756" }
+    ]
+  },
+  {
+    "organization": "Rutgers University - CCICADA Lab",
+    "role": "Research Assistant",
+    "dates": "Sep 2022 - May 2025",
+    "notes": [
+      "Designed hybrid rule-based/ML models to simulate pedestrian flow in transit facilities using Unity; improved bottleneck prediction and outperformed prior work in behavior accuracy by 28%.",
+      "Built an evaluation framework using rule-based simulation to assess whether predicted human trajectories are physically plausible using NVIDIA Warp."
+    ],
+    "links": [
+      { "text": "Attention-based Movement [TRC]", "href": "https://danruili.github.io/AttentionMove/" }
+    ]
+  },
+  {
+    "organization": "Shanghai Tongji Urban Planning & Design Institute Co., Ltd.",
+    "role": "Urban Design Intern",
+    "dates": "Dec 2019 - Jan 2020",
+    "notes": [
+      "Built benchmark tools for sensitivity analysis in pedestrian simulations using MassMotion SDK.",
+      "Reduced expected maximum pedestrian congestion in a railway station design by simulation-assisted architectural design optimization.",
+      "Proposed and refined architectural and urban design for railway station areas."
+    ],
+    "links": [
+      { "text": "Sensitivity Analysis [CAADRIA '21]", "href": "https://papers.cumincad.org/cgi-bin/works/paper/caadria2021_081" }
+    ]
+  },
+  {
+    "organization": "Cushman & Wakefield",
+    "role": "Consulting Intern",
+    "dates": "Jul 2019 - Aug 2019",
+    "notes": [
+      "Investigated project strengths and weakness for clients by geographic data analysis.",
+      "Proposed develop strategies for real estate and economic zones projects in China."
+    ]
+  }
+]

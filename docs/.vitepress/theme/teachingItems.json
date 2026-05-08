@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Intro to Computer Graphics - Teaching Assistant",
+    "affiliation": "Rutgers University. Spring 2026.",
+    "notes": [
+      "Gave weekly recitations and invited lectures on computer graphics topics, ranging from crowd simulation to procedural content generation.",
+      "MIT-licensed teaching materials are available on the course page."
+    ],
+    "linkText": "Course Page",
+    "href": "/teaching/computer_graphics",
+    "imagePath": "../../teaching/terrain_generation.png"
+  },
+  {
+    "title": "Space and Form - Part-time Lecturer",
+    "affiliation": "Xianda College, Shanghai International Studies University. Fall 2021.",
+    "notes": [
+      "Courses prepared as main instructor.",
+      "A 7-week course on spatial design for environmental design undergrads."
+    ],
+    "linkText": "Course Syllabus",
+    "href": "/teaching/spatial_design",
+    "imagePath": "../../teaching/space_assignment_1.png"
+  },
+  {
+    "title": "AI in Architecture Design",
+    "affiliation": "Course material under development.",
+    "notes": [
+      "Designed for senior undergrad/graduate students in architecture design."
+    ],
+    "linkText": "Course Syllabus",
+    "href": "/teaching/ai_design"
+  },
+  {
+    "title": "Intro to Deep Learning - Teaching Assistant",
+    "affiliation": "Rutgers University. Fall 2025.",
+    "notes": [
+      "Gave weekly recitations on using PyTorch framework to implement deep learning models such as VAE, RNN, LSTM, and Transformers."
+    ]
+  },
+  {
+    "title": "GenAI for Visual Computing - Guest Lecturer",
+    "affiliation": "Rutgers University. Spring 2025.",
+    "notes": [
+      "Gave two lectures on utilizing Large Language Model agents to produce creative design contents in digital storytelling and computer games."
+    ]
+  },
+  {
+    "title": "Geometric Garden - Teaching Assistant",
+    "affiliation": "Vanke Meisha Academy. Summer 2021.",
+    "notes": [
+      "Designed and taught problem-based learning courses for primary and junior school students, covering fundamentals of landscape and urban design."
+    ]
+  }
+]
