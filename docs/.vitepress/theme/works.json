@@ -36,7 +36,7 @@
     "title": "From Words to Worlds: Transforming One-line Prompts into Multi-modal Digital Stories with LLM Agents",
     "authors": "Danrui Li, Samuel S. Sohn, Sen Zhang, Che-Jui Chang, Mubbasir Kapadia.",
     "publication": "ACM SIGGRAPH Conference on Motion, Interaction, and Games (MIG 2024)",
-    "description": "How to automates digital storytelling with fine-grained control? We maintain a track of intermediate products in text form and use LLMs as an organizer of various generative tools.",
+    "description": "How to automate digital storytelling with fine-grained control? We maintain a track of intermediate products in text form and use LLM as an organizer of various generative tools.",
     "projectLink": "https://danruili.github.io/WordsToWorlds/",
     "articleLink": "https://doi.org/10.1145/3677388.3696321",
     "preprintLink": "https://arxiv.org/abs/2406.10478",
