@@ -12,7 +12,14 @@ const teachingImages = import.meta.glob('../../teaching/*.{png,jpg,jpeg,webp,gif
 const visibleWorks = works.filter((work) => !work.hide)
 const headlineWork = visibleWorks[0]
 const visualWorks = visibleWorks.slice(1, 5)
+const researchFeatureWorks = visualWorks.slice(0, 2)
+const researchRailWorks = visualWorks.slice(2)
 const textWorks = visibleWorks.slice(5)
+const archiveLeadWork = textWorks[0]
+const archiveFeatureWorks = textWorks.slice(1).filter((work) => work.imagePath).slice(0, 3)
+const archiveRailWorks = textWorks
+  .slice(1)
+  .filter((work) => !archiveFeatureWorks.includes(work))
 const teachingTrack = ref(null)
 const workTrack = ref(null)
 
@@ -52,7 +59,7 @@ const teachingCarouselColumns = [
 ]
 
 const linkTypes = [
-  ['projectLink', 'Project'],
+  ['projectLink', 'Website'],
   ['datasetLink', 'Dataset'],
   ['repoLink', 'Code'],
   ['articleLink', 'Article'],
@@ -64,7 +71,6 @@ function itemLinks(item) {
     .filter(([key]) => item[key])
     .map(([key, text]) => ({ text, href: item[key] }))
 }
-
 
 function chunkItems(items, size) {
   const chunks = []
@@ -181,65 +187,170 @@ function scrollWork(direction) {
 
     <section id="research" class="content-section" aria-labelledby="research-title">
       <div class="section-heading">
-        <h2 id="research-title">Featured Research</h2>
+        <h2 id="research-title">LLM + Creative Industry</h2>
       </div>
 
-      <div class="visual-grid">
+      <div class="archive-layout">
         <article
-          v-for="work in visualWorks"
+          v-for="work in researchFeatureWorks"
           :key="work.title"
-          class="visual-story"
+          class="archive-lead"
         >
-          <figure v-if="work.imagePath" class="story-figure">
-            <img :src="work.imagePath" :alt="work.title" />
-          </figure>
+          <div class="archive-lead-top">
+            <div class="archive-lead-heading">
+              <h3>{{ work.title }}</h3>
+              <p class="byline">{{ work.publication }}</p>
+            </div>
 
-          <h3>{{ work.title }}</h3>
-          <p class="byline">{{ work.publication }}</p>
-          <p>{{ work.description }}</p>
+            <figure v-if="work.imagePath" class="archive-lead-figure">
+              <img :src="work.imagePath" :alt="work.title" />
+            </figure>
+          </div>
 
-          <div class="link-row" :aria-label="`${work.title} links`">
-            <a
-              v-for="link in itemLinks(work)"
-              :key="link.text"
-              :href="link.href"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {{ link.text }}
-            </a>
+          <div class="archive-lead-body">
+            <p>{{ work.description }}</p>
+
+            <div class="link-row" :aria-label="`${work.title} links`">
+              <a
+                v-for="link in itemLinks(work)"
+                :key="link.text"
+                :href="link.href"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ link.text }}
+              </a>
+            </div>
           </div>
         </article>
+
+        <aside
+          v-if="researchRailWorks.length"
+          class="archive-rail"
+          aria-label="More LLM and creative industry work"
+        >
+          <article
+            v-for="work in researchRailWorks"
+            :key="work.title"
+            class="archive-rail-entry"
+          >
+            <figure v-if="work.imagePath" class="archive-rail-figure">
+              <img :src="work.imagePath" :alt="work.title" />
+            </figure>
+
+            <h3>{{ work.title }}</h3>
+            <p class="byline">{{ work.publication }}</p>
+            <p>{{ work.description }}</p>
+
+            <div class="link-row" :aria-label="`${work.title} links`">
+              <a
+                v-for="link in itemLinks(work)"
+                :key="link.text"
+                :href="link.href"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ link.text }}
+              </a>
+            </div>
+          </article>
+        </aside>
       </div>
     </section>
 
     <section class="content-section" aria-labelledby="archive-title">
       <div class="section-heading">
-        <h2 id="archive-title">Additional Publications</h2>
+        <h2 id="archive-title">Pedestrian Modeling</h2>
       </div>
 
-      <div class="text-index">
+      <div class="archive-layout">
         <article
-          v-for="work in textWorks"
-          :key="work.title"
-          class="text-entry"
+          v-if="archiveLeadWork"
+          class="archive-lead"
         >
-          <h3>{{ work.title }}</h3>
-          <p class="byline">{{ work.publication }}</p>
-          <p>{{ work.description }}</p>
+          <div class="archive-lead-top">
+            <div class="archive-lead-heading">
+              <h3>{{ archiveLeadWork.title }}</h3>
+              <p class="byline">{{ archiveLeadWork.publication }}</p>
+            </div>
 
-          <div class="link-row" :aria-label="`${work.title} links`">
-            <a
-              v-for="link in itemLinks(work)"
-              :key="link.text"
-              :href="link.href"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {{ link.text }}
-            </a>
+            <figure v-if="archiveLeadWork.imagePath" class="archive-lead-figure">
+              <img :src="archiveLeadWork.imagePath" :alt="archiveLeadWork.title" />
+            </figure>
+          </div>
+
+          <div class="archive-lead-body">
+            <p>{{ archiveLeadWork.description }}</p>
+
+            <div class="link-row" :aria-label="`${archiveLeadWork.title} links`">
+              <a
+                v-for="link in itemLinks(archiveLeadWork)"
+                :key="link.text"
+                :href="link.href"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ link.text }}
+              </a>
+            </div>
           </div>
         </article>
+
+        <aside
+          v-if="archiveRailWorks.length"
+          class="archive-rail"
+          aria-label="More additional publications"
+        >
+          <article
+            v-for="(work, index) in archiveRailWorks"
+            :key="work.title"
+            class="archive-rail-entry"
+          >
+            <figure v-if="work.imagePath" class="archive-rail-figure">
+              <img :src="work.imagePath" :alt="work.title" />
+            </figure>
+
+            <h3>{{ work.title }}</h3>
+            <p class="byline">{{ work.publication }}</p>
+            <p v-if="index < archiveRailWorks.length - 2">{{ work.description }}</p>
+
+            <div class="link-row" :aria-label="`${work.title} links`">
+              <a
+                v-for="link in itemLinks(work)"
+                :key="link.text"
+                :href="link.href"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ link.text }}
+              </a>
+            </div>
+          </article>
+        </aside>
+
+        <div v-if="archiveFeatureWorks.length" class="archive-cards">
+          <article
+            v-for="work in archiveFeatureWorks"
+            :key="work.title"
+            class="archive-card"
+          >
+            <h3>{{ work.title }}</h3>
+            <p class="byline">{{ work.publication }}</p>
+            <p>{{ work.description }}</p>
+
+            <div class="link-row" :aria-label="`${work.title} links`">
+              <a
+                v-for="link in itemLinks(work)"
+                :key="link.text"
+                :href="link.href"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ link.text }}
+              </a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -370,20 +481,30 @@ function scrollWork(direction) {
   --paper-rule: var(--vp-c-divider);
   --paper-accent: var(--vp-c-brand-1);
   --paper-secondary: var(--vp-c-brand-2);
-  --profile-title-size: clamp(2.6rem, 5vw, 4.2rem);
-  --headline-title-size: clamp(1.5rem, 3vw, 2.3rem);
+  --type-display: 2.85rem;
+  --type-headline: 1.72rem;
+  --type-section: 1.34rem;
+  --type-story: 1rem;
+  --type-story-lead: 1.3rem;
+  --type-story-compact: 1rem;
+  --type-body: 0.8rem;
+  --type-body-large: 0.9rem;
+  --type-meta: 0.8rem;
+  --type-small: 0.7rem;
   color: var(--paper-ink);
   margin: 0 auto;
   max-width: 1180px;
-  padding: 1.0rem 1.5rem 4.5rem;
+  padding: 0rem 0.5rem 0rem;
 }
 
 :is(
   .profile-panel h1,
   .headline h2,
   .section-heading h2,
-  .visual-story h3,
   .text-entry h3,
+  .archive-lead h3,
+  .archive-card h3,
+  .archive-rail-entry h3,
   .experience-entry h3,
   .teaching-card h3
 ) {
@@ -397,9 +518,9 @@ function scrollWork(direction) {
 }
 
 .profile-panel h1 {
-  font-size: var(--profile-title-size);
+  font-size: var(--type-display);
   font-weight: 700;
-  line-height: 0.94;
+  line-height: 0.98;
   margin: 0 0 0.8rem;
 }
 
@@ -419,7 +540,7 @@ function scrollWork(direction) {
 
 .nav-strip a,
 .link-row a {
-  font-size: 0.86rem;
+  font-size: var(--type-meta);
   line-height: 1.35;
   text-decoration: none;
 }
@@ -431,8 +552,11 @@ function scrollWork(direction) {
 
 .link-row a {
   border-bottom: 1px solid currentColor;
+  /* font-weight: 650; */
+}
+
+.link-row a {
   color: var(--paper-secondary);
-  font-weight: 650;
 }
 
 .nav-strip-link--internal {
@@ -468,32 +592,33 @@ function scrollWork(direction) {
 
 .section-kicker {
   color: var(--paper-accent);
-  font-size: 0.78rem;
+  font-size: var(--type-small);
   font-weight: 800;
   margin: 0 0 0.5rem;
   text-transform: uppercase;
 }
 
 .headline h2 {
-  font-size: var(--headline-title-size);
-  line-height: 1.04;
+  font-size: var(--type-headline);
+  line-height: 1.08;
   margin: 0 0 0.45rem;
 }
 
 .byline {
   color: var(--paper-muted);
-  font-size: 0.9rem;
+  font-size: var(--type-meta);
   font-style: italic;
   line-height: 1.45;
   margin: 0.2rem 0 0.8rem;
 }
 
-/* .headline-figure, */
 .story-figure,
+/* .archive-lead-figure, */
+.archive-card-figure,
+.archive-rail-figure,
 .teaching-card-figure {
-  aspect-ratio: var(--figure-ratio);
+  /* aspect-ratio: var(--figure-ratio); */
   /* background: var(--vp-c-bg-soft); */
-  overflow: hidden;
 }
 
 .headline-figure {
@@ -505,25 +630,42 @@ function scrollWork(direction) {
   --figure-ratio: 16 / 8;
 }
 
+.archive-lead-figure {
+  --figure-ratio: 16 / 9;
+  margin: 0;
+}
+
+.archive-card-figure {
+  --figure-ratio: 16 / 9;
+  margin: 0 0 0.75rem;
+}
+
+.archive-rail-figure {
+  --figure-ratio: 16 / 9;
+  margin: 0 0 0.65rem;
+}
+
 .teaching-card-figure {
-  --figure-fit: cover;
   --figure-ratio: 16 / 9;
   margin: 0 0 0.8rem;
 }
 
 .headline-figure img,
 .story-figure img,
+.archive-lead-figure img,
+.archive-card-figure img,
+.archive-rail-figure img,
 .teaching-card-figure img {
   display: block;
   height: 100%;
-  object-fit: var(--figure-fit, contain);
+  object-fit: contain;
   width: 100%;
 }
 
 .lead {
   color: var(--paper-ink);
-  font-size: 1.06rem;
-  line-height: 1.64;
+  font-size: var(--type-body-large);
+  line-height: 1.56;
   margin: 0;
 }
 
@@ -544,7 +686,7 @@ function scrollWork(direction) {
 
 .profile-panel > p:not(.section-kicker),
 .theme-list li {
-  font-size: 0.92rem;
+  font-size: var(--type-body-large);
   line-height: 1.5;
 }
 
@@ -566,23 +708,31 @@ function scrollWork(direction) {
 }
 
 .content-section {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .section-heading {
   align-items: center;
+  border-bottom: 1.0px solid var(--paper-rule);
+  /* border-top: 1.5px solid var(--paper-accent); */
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .section-heading h2 {
   border-top: 0;
-  font-size: 1.45rem;
-  line-height: 1.1;
+  color: var(--paper-accent);
+  font-family: inherit;
+  font-size: var(--type-body-large);
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.25;
   margin: 0;
   padding-top: 0;
+  text-transform: uppercase;
 }
 
 .teaching-heading,
@@ -637,43 +787,130 @@ function scrollWork(direction) {
   outline-offset: 2px;
 }
 
-.visual-grid {
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.visual-story {
-  position: relative;
-}
-
-.visual-story:not(:last-child)::after {
-  background: var(--paper-rule);
-  bottom: 0;
-  content: '';
-  position: absolute;
-  right: calc(-0.625rem - 0.5px);
-  top: 0;
-  width: 1px;
-}
-
-:is(.visual-story, .text-entry, .experience-entry, .teaching-card) h3 {
-  font-size: 1.18rem;
+:is(.text-entry, .experience-entry, .teaching-card) h3 {
+  font-size: var(--type-story);
   line-height: 1.18;
   margin: 0.4rem 0 0.3rem;
 }
 
-:is(.visual-story, .text-entry, .experience-entry, .teaching-card) > p:not(.byline) {
+:is(
+  .text-entry,
+  .archive-lead-body,
+  .archive-card,
+  .archive-rail-entry,
+  .experience-entry,
+  .teaching-card
+) > p:not(.byline) {
   color: var(--paper-muted);
-  font-size: 0.92rem;
+  font-size: var(--type-body);
   line-height: 1.55;
   margin: 0.45rem 0 0;
 }
 
-.text-index {
-  column-count: 2;
-  column-gap: 2.5rem;
-  column-rule: 1px solid var(--paper-rule);
+.archive-layout {
+  align-items: start;
+  display: grid;
+  gap: 1.3rem 1.9rem;
+  grid-template-columns: minmax(0, 3.15fr) minmax(250px, 0.95fr);
+}
+
+.archive-lead {
+  /* border-bottom: 1px solid var(--paper-rule); */
+  display: grid;
+  gap: 0.9rem;
+  padding-bottom: 1.1rem;
+}
+
+.archive-lead-top {
+  align-items: center;
+  display: grid;
+  gap: 1.35rem;
+  grid-template-columns: minmax(210px, 0.34fr) minmax(0, 0.66fr);
+}
+
+.archive-lead h3 {
+  font-size: var(--type-story-lead);
+  line-height: 1.14;
+  margin: 0 0 0.45rem;
+}
+
+.archive-lead-heading,
+.archive-lead-body {
+  min-width: 0;
+}
+
+.archive-lead-body > p:not(.byline) {
+  font-size: var(--type-body-large);
+  line-height: 1.5;
+}
+
+.archive-rail {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  padding-left: 1.35rem;
+}
+
+.archive-rail-entry {
+  /* border-top: 1px solid var(--paper-rule); */
+  padding: 0.85rem 0;
+}
+
+.archive-rail-entry:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.archive-rail-entry:last-child {
+  padding-bottom: 0;
+}
+
+.archive-rail-entry h3 {
+  font-size: var(--type-story-compact);
+  line-height: 1.16;
+  margin: 0 0 0.35rem;
+}
+
+.archive-rail-entry .byline {
+  font-size: var(--type-small);
+  margin-bottom: 0.45rem;
+}
+
+.archive-rail-entry > p:not(.byline) {
+  font-size: var(--type-body);
+  line-height: 1.42;
+}
+
+.archive-cards {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+}
+
+.archive-card {
+  min-width: 0;
+  padding-right: 1.25rem;
+}
+
+.archive-card:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.archive-card h3 {
+  font-size: var(--type-story-compact);
+  line-height: 1.16;
+  margin: 0 0 0.35rem;
+}
+
+.archive-card .byline {
+  font-size: var(--type-small);
+  margin-bottom: 0.5rem;
+}
+
+.archive-card > p:not(.byline) {
+  font-size: var(--type-body);
+  line-height: 1.4rem;
 }
 
 .text-entry,
@@ -749,7 +986,7 @@ function scrollWork(direction) {
 
 .detail-list {
   color: var(--paper-muted);
-  font-size: 0.92rem;
+  font-size: var(--type-body);
   line-height: 1.55;
   margin: 0.45rem 0 0;
   padding-left: 1.1rem;
@@ -760,6 +997,13 @@ function scrollWork(direction) {
 }
 
 @media (max-width: 960px) {
+  .newspaper-home {
+    --type-display: 2.5rem;
+    --type-headline: 1.58rem;
+    --type-section: 1.28rem;
+    --type-story-lead: 1.22rem;
+  }
+
   .front-page {
     grid-template-columns: 1fr;
   }
@@ -770,16 +1014,40 @@ function scrollWork(direction) {
     padding-right: 0;
   }
 
-  .visual-grid {
+  .archive-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-lead-top {
+    grid-template-columns: minmax(210px, 0.38fr) minmax(0, 0.62fr);
+  }
+
+  .archive-rail {
+    border-left: 0;
+    border-top: 1px solid var(--paper-rule);
+    gap: 1.25rem;
+    grid-column: auto;
+    grid-row: auto;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-left: 0;
+    padding-top: 1.1rem;
   }
 
-  .visual-story:nth-child(2n)::after {
-    content: none;
+  .archive-rail-entry,
+  .archive-rail-entry:first-child {
+    border-top: 0;
+    padding: 0;
   }
 
-  .text-index {
-    column-count: 1;
+  .archive-card,
+  .archive-card:last-child {
+    border-right: 0;
+    padding-right: 0;
+  }
+
+  .archive-card {
+    border-top: 1px solid var(--paper-rule);
+    padding-top: 1rem;
   }
 
   .teaching-carousel,
@@ -803,6 +1071,13 @@ function scrollWork(direction) {
 
 @media (max-width: 640px) {
   .newspaper-home {
+    --type-display: 2.2rem;
+    --type-headline: 1.42rem;
+    --type-section: 1.2rem;
+    --type-story: 1.02rem;
+    --type-story-lead: 1.12rem;
+    --type-story-compact: 0.98rem;
+    --type-body-large: 0.92rem;
     padding: 0.5rem 1rem 3rem;
   }
 
@@ -810,9 +1085,34 @@ function scrollWork(direction) {
     aspect-ratio: 4 / 3;
   }
 
-  .briefing,
-  .visual-grid {
+  .briefing {
     grid-template-columns: 1fr;
+  }
+
+  .archive-lead,
+  .archive-lead-top,
+  .archive-cards,
+  .archive-rail {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-lead,
+  .archive-lead-top {
+    gap: 0.85rem;
+  }
+
+  .archive-lead-figure {
+    grid-row: 1;
+  }
+
+  .archive-rail-entry {
+    border-top: 1px solid var(--paper-rule);
+    padding-top: 1rem;
+  }
+
+  .archive-rail-entry:first-child {
+    border-top: 0;
+    padding-top: 0;
   }
 
   .teaching-carousel,
@@ -830,19 +1130,5 @@ function scrollWork(direction) {
     padding-right: 1rem;
   }
 
-  .visual-story,
-  .visual-story:nth-child(2n) {
-    border-top: 1px solid var(--paper-rule);
-    padding-top: 1rem;
-  }
-
-  .visual-story::after {
-    content: none;
-  }
-
-  .visual-story:first-child {
-    border-top: 0;
-    padding-top: 0;
-  }
 }
 </style>
