@@ -6,6 +6,7 @@
     "description": "We introduce AssemblyBench, a synthetic dataset of industrial objects with multimodal instruction manuals, corresponding 3D part models, and part assembly trajectories. We also propose a transformer-based model, which uses the instructional data to predict part assembly process.",
     "projectLink": "https://www.merl.com/research/highlights/assemblybench",
     "repoLink": "https://github.com/merlresearch/AssemblyBench",
+    "preprintLink": "https://arxiv.org/abs/2605.12845",
     "datasetLink": "https://zenodo.org/records/19742725",
     "imagePath": "./image/assemblybench.jpg",
     "tags": "LLM, 3D understanding, Object assembly"
@@ -14,7 +15,7 @@
     "title": "Early-stage architecture design assistance by LLMs and knowledge graphs",
     "authors": "Danrui Li, Yichao Shi, Mathew Schwartz, Mubbasir Kapadia.",
     "publication": "Automation in Construction",
-    "description": "We built a LLM-based question-answering framework with precedent design references. It combines a custom architecture-focused knowledge graph with retrieval-augmented generation to better use visual + textual design data, assisting novel architects in early-stage design.",
+    "description": "How to handle multi-modal design data in LLM-based question-answering frameworks? We combines a custom architecture-focused knowledge graph with retrieval-augmented generation to assist novel architects using precedent design references.",
     "repoLink": "https://github.com/danruili/ArchLogicRAG",
     "articleLink": "https://doi.org/10.1016/j.autcon.2025.106756",
     "imagePath": "./image/archlogicgraph.png",
@@ -23,8 +24,8 @@
   {
     "title": "Cardiverse: Harnessing LLMs for Novel Card Game Prototyping",
     "authors": "Danrui Li, Sen Zhang, Sam S. Sohn, Kaidong Hu, Muhammad Usman, Mubbasir Kapadia.",
-    "publication": "EMNLP 2025",
-    "description": "Given a textual card game description, Cardiverse uses an LLM-powered framework to create novel and playable game variant prototypes.",
+    "publication": "Conference on Empirical Methods in Natural Language Processing (EMNLP 2025)",
+    "description": "How to create game prototypes that are both novel and playable? Cardiverse proposes an LLM-powered framework with graph knowledge base and self-play heuritic ensembles to achieve the two goals respectively.",
     "projectLink": "https://danruili.github.io/Cardiverse/",
     "preprintLink": "https://arxiv.org/abs/2502.07128",
     "articleLink": "https://aclanthology.org/2025.emnlp-main.1511/",
@@ -35,22 +36,12 @@
     "title": "From Words to Worlds: Transforming One-line Prompts into Multi-modal Digital Stories with LLM Agents",
     "authors": "Danrui Li, Samuel S. Sohn, Sen Zhang, Che-Jui Chang, Mubbasir Kapadia.",
     "publication": "ACM SIGGRAPH Conference on Motion, Interaction, and Games (MIG 2024)",
-    "description": "Utilizing Large Language Models as an organizer of various generative tools, the StoryAgent framework automates digital storytelling with fine-grained control over intermediate products.",
+    "description": "How to automates digital storytelling with fine-grained control? We maintain a track of intermediate products in text form and use LLMs as an organizer of various generative tools.",
     "projectLink": "https://danruili.github.io/WordsToWorlds/",
     "articleLink": "https://doi.org/10.1145/3677388.3696321",
     "preprintLink": "https://arxiv.org/abs/2406.10478",
     "imagePath": "./image/storyagent.png",
     "tags": "LLM for design, Digital storytelling"
-  },
-  {
-    "title": "Microscopic modeling of attention-based movement behaviors",
-    "authors": "Danrui Li, Mathew Schwartz, Samuel S. Sohn, Sejong Yoon, Vladimir Pavlovic, Mubbasir Kapadia (2024)",
-    "publication": "Transportation Research Part C: Emerging Technologies",
-    "description": "How will attention affect walking speed in retail areas? We model how pedestrians will be attracted to environmental objects and how this will slow down their walking speed. Then we show how our model can help optimize the design of retail areas in transportation hubs.",
-    "projectLink": "https://danruili.github.io/AttentionMove/",
-    "articleLink": "https://arxiv.org/abs/2403.14892",
-    "imagePath": "./image/attentionBanner.png",
-    "tags": "Human behavior modeling, Pedestrian simulation"
   },
   {
     "title": "ArchSeek: Retrieving Architectural Case Studies Using Vision-Language Models",
@@ -61,6 +52,16 @@
     "preprintLink": "https://arxiv.org/abs/2503.18680",
     "imagePath": "./image/archseek.png",
     "tags": "LLM for design, Information retrieval"
+  },
+  {
+    "title": "Microscopic modeling of attention-based movement behaviors",
+    "authors": "Danrui Li, Mathew Schwartz, Samuel S. Sohn, Sejong Yoon, Vladimir Pavlovic, Mubbasir Kapadia (2024)",
+    "publication": "Transportation Research Part C: Emerging Technologies",
+    "description": "How will attention affect walking speed in retail areas? We model how pedestrians will be attracted to environmental objects and how this will slow down their walking speed. Then we show how our model can help optimize the design of retail areas in transportation hubs.",
+    "projectLink": "https://danruili.github.io/AttentionMove/",
+    "articleLink": "https://arxiv.org/abs/2403.14892",
+    "imagePath": "./image/attentionBanner.png",
+    "tags": "Human behavior modeling, Pedestrian simulation"
   },
   {
     "title": "TrajDiffuse: A Conditional Diffusion Model for Environment-Aware Trajectory Prediction",
